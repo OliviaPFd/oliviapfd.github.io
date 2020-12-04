@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lab exercise html5</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Olivia Field" />
+    <meta name="description" content="HTML5 lab exercises" />
+</head>
+
+<body>
+    <header>
+        <h1>HTML5 Common Elements</h1>
+    </header>
+
+    <p>This page demonstrates some of the HTML5 commonly used elements</p>
+
+    <article>
+        <h2>Hyperlinks</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/">Click here to go to: https://developer.mozilla.org/</a></li>
+            <li><a href="#html5-elements">Click here to go to: HTML5 ID Hyperlink</a></li>
+            <li><a href="html5-structural-elements.html#html5-elements">Click here to go to: HTML5 Structural elements ID Hyperlink</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics">Click here to go to: MDN Inline Text Semantics</a></li>
+        </ul>
+        <p>Hyperlink in images... (Read about image formats)</p>
+        <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">
+            <img src="images/star.svg" alt="Image formats" />
+        </a>
+    </article>
+
+    <article>
+        <h2>Images to Display Content</h2>
+        <figure>
+            <img src="images/star.svg" alt="Example SVG image" />
+            <img src="images/star.png" alt="Example PNG image" />
+            <figcaption>SVG and PNG format comparison.</figcaption>
+        </figure>
+    </article>
+
+    <article>
+        <h2>Div Element</h2>
+        <div id="div-example" class="div-example">
+            <p>Any number of element to be grouped into one division - html5 introduces more semantic sectioning elements, article, section, header, aside, footer and nav and they should be used in preference to the more generic div.</p>
+        </div>
+    </article>
+
+    <article>
+        <h2>Span Element</h2>
+        <p>The following is part of a paragraph <span class="highlight">wrapped in a span element</span> so that it can be selected.</p>
+        <p>html5 introduces more semantic sectioning elements, code, strong, em and abbr and they should be used in preference to the more generic span.</p>
+    </article>
+
+    <article>
+        <h2>Block Quote</h2>
+        <blockquote cite="http://developer.mozilla.org">
+            <p>This is a quotation taken from the Mozilla Developer Center.</p>
+        </blockquote>
+    </article>
+
+    <article>
+        <h2>Inline Quote</h2>
+        <p>In the new world of semantic markup,
+            <q cite="http://ebbi.github.io">
+                Separation of content from how it is presented is key to modern web development.
+            </q>.
+        </p>
+    </article>
+
+    <article>
+        <h2>Forms</h2>
+        <form method="get" action="server_program_name">
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" />
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" />
+
+            <button type="submit" value="submit">Sign in</button>
+
+        </form>
+    </article>
+
+    <article>
+        <h2>Form Widgets</h2>
+        <section>
+            <h3>Radio Buttons</h3>
+            <p>Choose your favourite colour:
+                <input type="radio" name="colour" value="red" checked="checked" /> Red
+                <input type="radio" name="colour" value="green" /> Green
+                <input type="radio" name="colour" value="blue" /> Blue
+            </p>
+            <p>Which is your favourite pass time?
+                <input type="radio" name="hobby" value="travel" /> Travel
+                <input type="radio" name="hobby" value="food" /> Food
+                <input type="radio" name="hobby" value="sky diving" /> Sky Diving
+            </p>
+        </section>
+        <section>
+            <h3>Check Boxes</h3>
+            <p>Select your favourite colour(s):
+                <input type="checkbox" name="red" value="true" checked="checked" /> red
+                <input type="checkbox" name="green" value="true" /> green
+                <input type="checkbox" name="blue" value="true" checked="checked" /> blue
+            </p>
+        </section>
+    </article>
+
+    <article>
+        <h2>File Picker</h2>
+        <form method="post" enctype="multipart/form-data" action="my_server_prog">
+            <p>
+                <label for="fileupload">Please choose a file to upload: </label>
+                <input type="file" id="fileupload" name="file1" />
+            </p>
+        </form>
+    </article>
+
+    <p id="html5-elements">ID used within hyperlink example</p>
+
+    <p>Links to additional HTML5 labs:</p>
+    <nav>
+        <ul>
+            <li><a href="html5-template.html">HTML5 Template</a></li>
+            <li><a href="html5-validation.html">HTML5 Validation</a></li>
+            <li><a href="html5-structural-elements.html">HTML5 Structural elements</a></li>
+        </ul>
+    </nav>
+
+    <p>Click to go to the page containing all lab links: <a href="../../index.html">Click Here</a></p>
+
+    <footer>
+        &copy; no rights.
+    </footer>
+</body>
+
+</html>

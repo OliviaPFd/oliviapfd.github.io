@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Website Assessment</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Olivia Field" />
+    <meta name="description" content="Website Assessment" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="js/p4-main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>A Little Game</h1>
+    </header>
+
+    <nav>
+        <a href="page-1.html">Home</a>
+        <a href="page-2.html">About Me</a>
+        <a href="page-3.html">My Education</a>
+        <a href="page-4.html">A Little Game</a>
+        <a href="page-5.html">Comments</a>
+    </nav>
+
+    <section class="main-column">
+        <h2>Hi-Lo Game</h2>
+        <p class="introText">The aim of this game is to guess whether or not that the card you get shown will be higher or lower for the next card that is shown. For each time you guess correctly you will be rewarded one point. However, for each time you guess incorrectly your points will reset.</p>
+        <p>Try to reach a score of 10!</p>
+
+        <img id="card" src="images/2card.png" alt="card">
+
+        <section class="guessForm">
+            <h2>Your Guess:</h2>
+            <label id="guessField">Select a Guess: </label>
+            <input id="higherGuess" type="radio" name="guess" value="high" /> Higher
+            <input id="lowerGuess" type="radio" name="guess" value="low" /> Lower
+            <input id="button" type="submit" name="button" value="Submit Guess!" />
+        </section>
+
+        <p id="guessResult">Guess: Correct / Incorrect</p>
+        <p id="points">Points: 0</p>
+    </section>
+
+    <footer>
+        &#64; Olivia Field - O.Field5723@student.leedsbeckett.ac.uk
+        <p><a href="../index.html">Index Lab Links (Click Here)</a></p>
+    </footer>
+</body>
+
+</html>

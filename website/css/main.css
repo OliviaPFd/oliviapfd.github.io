@@ -1,0 +1,141 @@
+/**\ START Main Element CSS Layout \**/
+
+body {
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline
+}
+
+/**\ START Decorate Navigation Bar / Easier Use \**/
+
+nav {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/**\ END Decorate Navigation Bar / Easier Use \**/
+
+.main-column {
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+.introText {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/**\ END Main Element CSS Layout \**/
+
+/**\ START Page 1 CSS Additional Styling (in order of element appearance)\**/
+
+/* Padding For Better Visual */
+#layout1 {
+    padding-top: 20px;
+}
+
+#layout2 {
+    padding-bottom: 20px;
+}
+
+/**\ END Page 1 CSS Additional Styling \**/
+
+/**\ START Page 2 CSS Additional Styling (in order of element appearance)\**/
+/* Size Portrait Picture */
+#self-image {
+    float: left;
+    height: 120px;
+    width: 120px;
+}
+
+/* Create Paragraph Padding */
+#aboutme {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Highlight Name */
+#highlight {
+    background-color: #b8b8b8;
+}
+
+/* Create Paragraph Padding */
+#hobbies {
+    padding-bottom: 10px;
+}
+
+/**\ END Page 2 CSS Additional Styling \**/
+
+/**\ START Page 3 CSS Additional Styling (in order of element appearance) \**/
+/* Create Paragraph Padding */
+#top-padding {
+    padding-top: 20px;
+}
+
+/* Style Table / Easier To Read */
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-color: #c7c7c7;
+    padding: 10px;
+}
+
+table {
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**\ END Page 3 CSS Additional Styling \**/
+
+/**\ START Page 4 CSS Additional Styling (in order of element appearance) \**/
+
+#introText {
+    padding-top: 20px;
+}
+
+#points {
+    padding-bottom: 20px;
+}
+
+/**\ END Page 4 CSS Additional Styling \**/
+
+/**\ START Page 5 CSS Additional Styling (in order of element appearance) \**/
+
+#commentSubmission {
+    padding-top: 30px;
+}
+
+#commentSubmissionC {
+    margin-top: -50px;
+}
+
+/**\ END Page 5 CSS Additional Styling \**/

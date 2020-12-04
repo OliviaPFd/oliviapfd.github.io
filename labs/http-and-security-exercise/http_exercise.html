@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HTTP and Security Exercise</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Olivia Field" />
+    <meta name="description" content="HTTP and Security Exercise" />
+</head>
+
+<body>
+    <header>
+        <h1>HTTP and Security Exercise</h1>
+    </header>
+
+    <h2>What is the Hypertext Transfer Protocol (HTTP)?</h2>
+    <p>Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. The primary purpose of HTTP is the communciation between web browsers and web servers, but it is also used for other purposes. A client-server model is followed when a HTTP request is made with a client making a request and then recieving a response.</p>
+
+    <h2>Why is HTTP called a stateless protocol?</h2>
+    <p>HTTP is called a stateless protocol becaues the server does not keep any data or state between the two requests. Though, this primarily depends on the protocol and request that HTTP is transmitting as the transmission control protocol/internet protocol (TCP/IP) can have a request made that does not lose any messages it is transmitting.</p>
+
+    <h2>Describe the three phases of estabilishing a session using client-server protocols, such as HTTP:</h2>
+    <p>Sessions tend to consist of three phases:</p>
+    <ul>
+        <li>The client first establishes a TCP connection for data transmissions and requests to take place,</li>
+        <li>The client needs to send a request to the server and then wait for a response,</li>
+        <li>Finally, the server processes the request and then responds with a HTTP status response code and any other relevant data.</li>
+    </ul>
+
+    <h2>Describe the parameters on a get and post request:</h2>
+    <p>The GET request only requests a specific resource - essentially, the GET should only recieve data for a request. POST on the other hand is used to submit data at request with this data typically causing a change in state or other side effects on the server.</p>
+
+    <h2>What are the HTTP response status code and what do the HTTP status codes 200 and 404 indicate?</h2>
+    <p>HTTP status response codes are codes that provide differemnt information on requests such as wether a specific HTTP request has been successfully completed. A few examples of HTTP status codes are 200: the request has succeeded and this can apply for many different requests such asa GET or POST request, and 404: this is a request error meaning that the server has not been able to find the requested resource or that the domain provided cannot be found (404 is one of the most common error codes that appears on the web).</p>
+
+    <h2>What are HTTP cookies? With an example:</h2>
+    <p>HTTP cookies are small pieces of data that a server sends to the end-user's web browser which tends to be stored there and sent back later if any requests use this data. An examnple of a cookie is session data which keeps the data for the time that the user is on the browser such as to keep them signed in, but once the user closes their browser this data is no longer stored unless another request is made.</p>
+
+    <h2>Why are cookies a security issue?</h2>
+    <p>Cookies are primarily a security issue as they are stored on the user's browser which means that any with accesss to this will be able to see the data that is stored within the cookies which is why they should not be used for holding sensitive data and storage APIs should be used in place of cookies. Additionally, cookies are sent for every request made even if the data is stored which means there is a higher chance of this transmission getting intercepted by malicious users such as hackers.</p>
+
+    <h2>Describe session hijacking and XSS:</h2>
+    <p>Session hijacking means gaining access to and misusing a user's authenticated session which contains senstive information. This tends to be done through stealing a cookie for an existing session and this is another reason why cookies are a security issue. XSS is cross-site scripting which is an exploit allowing malicious users to enter client-side code which is executed and affects other users who are using a website.</p>
+
+    <h2>Describe Cross-site request and forgery (CSRF):</h2>
+    <p>CSRF is a cyber attack where a malicious user impersonates a trusted user and then sends unwanted commands through a website which tends to be done through sending malicious parameters in a submission or by hiding the malicious commands behind the URL or other elements such as images.</p>
+
+    <h2>What are Cross-site HTTP requests (CORS) and what requests use CORS?</h2>
+    <p>CORS stands for cross-origin resource sharing and it is used by HTTP to allow a server to request resources from any other origin so long as that site permits this. An example of using CORS is if you were to change the font of a website through using "Google Fonts". A "preflight" request will be sent to the server of the site trying to CORS to see whether or not it is permitted for use. Below is a list of requests that use CORS as covered on the CORS article on the MDN site <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS</a></p>
+    <ul>
+        <li>Invocations of the XMLHttpRequest or Fetch APIs, as discussed above.</li>
+        <li>Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy TrueType fonts that can only be cross-site loaded and used by web sites that are permitted to do so.</li>
+        <li>WebGL textures.</li>
+        <li>Images/video frames drawn to a canvas using drawImage().</li>
+        <li>CSS Shapes from images.</li>
+    </ul>
+
+    <p>Click to go to the page containing all lab links: <a href="../../index.html">Click Here</a></p>
+
+    <footer>
+        &copy; no rights.
+    </footer>
+</body>
+
+</html>

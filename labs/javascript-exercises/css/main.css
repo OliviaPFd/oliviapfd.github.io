@@ -1,0 +1,36 @@
+/* Element Styling For JavaScript Exercises */
+
+body {
+    font-family: helvetica, sans-serif;
+    width: 350px;
+}
+
+p {
+    background: #FFC125;
+    color: #5E2612;
+    padding: 10px;
+    visibility: hidden;
+}
+
+div {
+    padding-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 150px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li button {
+    font-size: 8px;
+    margin-left: 20px;
+    color: #666;
+}
